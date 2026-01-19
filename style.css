@@ -59,7 +59,7 @@ a:hover {
 
 .logo {
   display: block;
-  padding: 4rem;
+  padding: 1rem;
   margin-top: 3rem;
   flex: 1;
   max-width: 100%;
@@ -195,6 +195,7 @@ img {
     height: auto;
   }
 }
+
 
 
 

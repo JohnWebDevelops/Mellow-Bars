@@ -24,7 +24,7 @@ body {
   color: #ff7a00;
   font-size: 3rem;
   font-weight: bold;
-  margin-left: 40px;
+  margin-left: 1.5rem;
 }
 
 .nav-bar ul {
@@ -34,9 +34,7 @@ body {
 .nav-bar li {
   font-size: 1.5rem;
   display: inline-block;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-right: 15px;
+ margin:2rem 1rem;
 }
 
 a {
@@ -190,5 +188,6 @@ button:hover {
     height: auto;
   }
 }
+
 
 

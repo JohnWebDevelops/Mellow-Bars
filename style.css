@@ -34,7 +34,7 @@ body {
 .nav-bar li {
   font-size: 1.5rem;
   display: inline-block;
- margin:2rem 1rem;
+  margin: 2rem 1rem;
 }
 
 a {
@@ -48,20 +48,20 @@ a:hover {
 
 .main {
   display: flex;
-  margin-top: 40px;
+  margin-top: 1rem;
   align-items: center;
   text-align: left;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 4rem auto;
   padding: 0 2rem;
 }
 
 .logo {
   display: block;
-  padding: 20px;
-  margin-top: 60px;
+  padding: 4rem;
+  margin-top: 3rem;
   flex: 1;
-  max-width: 520px;
+  max-width: 100%;
 }
 
 .logo h2 {
@@ -77,24 +77,24 @@ a:hover {
 
 .img {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 1rem;
 }
 
 .img img {
-  max-width: 500px;
+  max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px;
+  border-radius: 0.75rem;
 }
 
 button {
-  padding: 0.7rem;
+  padding: 0.75rem;
   width: 35%;
-  border-radius: 15px;
+  border-radius: 0.75rem;
   background-color: #d4a373;
   color: #4e342e;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 1rem;
   border: 1px solid #4e342e;
 }
 
@@ -103,7 +103,7 @@ button:hover {
 }
 
 .pic img {
-  max-width: 400px;
+  max-width: 100%;
   width: 100%;
   flex-shrink: 0 1 auto;
   border-radius: 10px;
@@ -112,7 +112,7 @@ button:hover {
 .hook {
   display: flex;
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 100%;
   align-items: center;
   text-align: left;
   margin: 4rem auto;
@@ -126,7 +126,7 @@ button:hover {
   align-items: center;
 }
 .pic img {
-  max-width: 1200px;
+  max-width: 100%;
 }
 .title {
   display: flex;
@@ -173,10 +173,11 @@ button:hover {
   font-size: 1.1rem;
 }
 .bar-card img {
-  border-radius: 20px;
+  border-radius: 0.75rem;
 }
 
 .bar-card img {
+  width: 100%;
   max-width: 400px;
 }
 @media (max-width: 600px) {
@@ -188,6 +189,7 @@ button:hover {
     height: auto;
   }
 }
+
 
 
 

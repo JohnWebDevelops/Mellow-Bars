@@ -51,20 +51,22 @@ a:hover {
   margin-top: 1rem;
   align-items: center;
   text-align: left;
-  max-width: 100%;
+  max-width: 80%;
   margin: 4rem auto;
   padding: 0 2rem;
+  flex-wrap: wrap;
 }
-.main,
-img {
-  flex: 1;
-}
+
 .logo {
   display: block;
   padding: 4rem;
   margin-top: 3rem;
   flex: 1;
   max-width: 100%;
+}
+.logo,
+img {
+  flex: 1 1 300px;
 }
 
 .logo h2 {
@@ -84,7 +86,7 @@ img {
 }
 
 .img img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   display: block;
   border-radius: 0.75rem;
@@ -106,20 +108,24 @@ button:hover {
 }
 
 .pic img {
-  max-width: 100%;
-  width: 100%;
+  max-width: 70%;
   flex-shrink: 0 1 auto;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
 
 .hook {
   display: flex;
   padding: 2rem;
-  max-width: 100%;
+  max-width: 80%;
   align-items: center;
   text-align: left;
   margin: 4rem auto;
   gap: 2rem;
+}
+.hook,
+img {
+  flex: 1 1 300px;
 }
 
 .pic {
@@ -127,9 +133,6 @@ button:hover {
   padding: 1rem;
   justify-content: center;
   align-items: center;
-}
-.pic img {
-  max-width: 100%;
 }
 .title {
   display: flex;
@@ -192,6 +195,7 @@ button:hover {
     height: auto;
   }
 }
+
 
 
 

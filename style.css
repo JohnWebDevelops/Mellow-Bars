@@ -83,7 +83,7 @@ a:hover {
 }
 
 .img img {
-  max-width: 100%;
+  max-width: 500px;
   height: auto;
   display: block;
   border-radius: 10px;
@@ -181,3 +181,4 @@ button:hover {
 .bar-card img {
   max-width: 400px;
 }
+

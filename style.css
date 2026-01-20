@@ -2,189 +2,194 @@
   --accent: #ff7a00;
   --secondary: #00b3ff;
   --text: #111;
-  --bg: #fff;
+  --bg: #ffffff;
+  --brown: #4e342e;
+  --tan: #d4a373;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background-color: lightblue;
+  margin: 0;
   font-family: system-ui, sans-serif;
+  background-color: lightblue;
+  color: var(--text);
 }
+
+/* ---------------- NAV ---------------- */
 
 .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav-bar span {
-  color: #00b3ff;
+  padding: 1.5rem 2rem;
 }
 
 .nav-bar h1 {
-  color: #ff7a00;
   font-size: 3rem;
-  font-weight: bold;
-  margin-left: 1.5rem;
+  color: var(--accent);
 }
 
-.nav-bar ul {
+.nav-bar span {
+  color: var(--secondary);
+}
+
+.nav-links {
   list-style: none;
-}
-
-.nav-bar li {
-  font-size: 1.5rem;
-  display: inline-block;
-  margin: 2rem 1rem;
-}
-
-a {
-  text-decoration: none;
-  color: #4e342e;
-}
-
-a:hover {
-  color: #d4a373;
-}
-
-.main {
   display: flex;
-  margin-top: 1rem;
-  align-items: center;
-  text-align: left;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--brown);
+  font-size: 1.25rem;
+}
+
+.nav-links a:hover {
+  color: var(--tan);
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero {
   max-width: 80%;
   margin: 4rem auto;
   padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
-.logo {
-  display: block;
-  padding: 1rem;
-  margin-top: 3rem;
-  flex: 1;
-  max-width: 100%;
+.hero-text {
+  flex: 1 1 300px;
 }
-.logo h2 {
+
+.hero-text h2 {
   font-size: 3.5rem;
-  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.logo p {
+.hero-text p {
   font-size: 1.5rem;
-  font-weight: 400;
-  display: block;
+  margin-bottom: 1.5rem;
 }
 
-.img {
-  flex: 1;
-  margin-left: 1rem;
+.hero-image {
+  flex: 1 1 300px;
 }
 
-.img img {
-  max-width: 120%;
+.hero-image img {
+  width: 100%;
   height: auto;
-  display: block;
   border-radius: 0.75rem;
 }
+
+/* ---------------- BUTTON ---------------- */
 
 button {
-  padding: 0.75rem;
-  width: fit-content;
+  padding: 0.75rem 1.5rem;
   border-radius: 0.75rem;
-  background-color: #d4a373;
-  color: #4e342e;
-  cursor: pointer;
+  background-color: var(--tan);
+  color: var(--brown);
+  border: 1px solid var(--brown);
   font-size: 1rem;
-  border: 1px solid #4e342e;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: #c7925f;
 }
 
-.pic img {
-  max-width: 70%;
-  flex-shrink: 0 1 auto;
-  border-radius: 10px;
-  flex-wrap: wrap;
-}
+/* ---------------- HOOK SECTION ---------------- */
 
 .hook {
-  display: flex;
-  padding: 2rem;
   max-width: 80%;
-  align-items: center;
-  text-align: left;
   margin: 4rem auto;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
   gap: 2rem;
-}
-
-
-.pic {
-  display: flex;
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-.title {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-.title p {
-  font-size: 1.5rem;
-  font-weight: 200;
-  flex: 1;
-  display: block;
-  padding-left: 6rem;
-}
-.section-title {
-  font-size: 3.5rem;
-  font-weight: bold;
-  padding-left: 6rem;
-}
-.our-bars {
-  display: block;
-}
-.our-bars h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  font-weight: bold;
-}
-.bar-grid {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 4rem;
   flex-wrap: wrap;
 }
-.bar-card h3 {
-  align-items: center;
-  text-align: center;
-  font-size: 1.2rem;
+
+.hook-image,
+.hook-text {
+  flex: 1 1 300px;
 }
-.bar-card p {
-  text-align: center;
-  align-items: center;
-  font-size: 1.1rem;
-}
-.bar-card img {
+
+.hook-image img {
+  width: 100%;
   border-radius: 0.75rem;
+}
+
+.hook-text h2 {
+  font-size: 3rem;
+}
+
+.hook-text p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* ---------------- BARS ---------------- */
+
+.our-bars {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.our-bars h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.bar-grid {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bar-card {
+  max-width: 300px;
 }
 
 .bar-card img {
   width: 100%;
-  max-width: 400px;
+  border-radius: 0.75rem;
 }
+
+.bar-card h3 {
+  font-size: 1.25rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.bar-card p {
+  font-size: 1.1rem;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
 @media (max-width: 600px) {
-  .nav {
+  .nav-bar {
     flex-direction: column;
+    gap: 1rem;
   }
-  .img {
+
+  .hero,
+  .hook {
     max-width: 100%;
-    height: auto;
+  }
+
+  .hero-text h2,
+  .hook-text h2 {
+    font-size: 2.5rem;
   }
 }
 

@@ -86,7 +86,7 @@ img {
 }
 
 .img img {
-  max-width: 80%;
+  max-width: 120%;
   height: auto;
   display: block;
   border-radius: 0.75rem;
@@ -195,6 +195,7 @@ img {
     height: auto;
   }
 }
+
 
 
 

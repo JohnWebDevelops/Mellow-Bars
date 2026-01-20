@@ -89,7 +89,7 @@ a:hover {
 
 button {
   padding: 0.75rem;
-  width: 35%;
+  width: fit-content;
   border-radius: 0.75rem;
   background-color: #d4a373;
   color: #4e342e;
@@ -179,14 +179,15 @@ button:hover {
   max-width: 400px;
 }
 @media (max-width: 600px) {
-  nav {
+  .nav {
     flex-direction: column;
   }
-  img {
+  .img {
     max-width: 100%;
     height: auto;
   }
 }
+
 
 
 

@@ -64,11 +64,6 @@ a:hover {
   flex: 1;
   max-width: 100%;
 }
-.logo,
-img {
-  flex: 1 1 300px;
-}
-
 .logo h2 {
   font-size: 3.5rem;
   font-weight: bold;
@@ -123,10 +118,7 @@ button:hover {
   margin: 4rem auto;
   gap: 2rem;
 }
-.hook,
-img {
-  flex: 1 1 300px;
-}
+
 
 .pic {
   display: flex;
@@ -195,6 +187,7 @@ img {
     height: auto;
   }
 }
+
 
 
 
